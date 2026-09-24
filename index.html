@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Farias Soluções Elétricas — Eletricista Predial e Residencial. Instalações, manutenção e soluções elétricas com segurança e profissionalismo.">
+<title>Farias Soluções Elétricas | Eletricista Predial e Residencial</title>
+<style>
+:root{--yellow:#f5c400;--yellow2:#ffd83d;--ink:#18202b;--muted:#667085;--light:#f7f8fa;--white:#fff;--line:#e8ebef}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+.logo span{display:grid;place-items:center;background:var(--yellow);width:38px;height:38px;border-radius:10px;font-size:1.3rem}
+nav{display:flex;gap:25px;font-weight:600;color:#3c4653}
+nav a:hover{color:#b18b00}
+.hero{background:linear-gradient(135deg,#fff 0%,#fff 62%,#fff8d8 100%);padding:86px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}
+.badge{display:inline-block;background:#fff4bd;border:1px solid #f3d866;color:#755d00;padding:7px 13px;border-radius:999px;font-size:.88rem;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;letter-spacing:-2px;margin-bottom:18px}
+h1 em{font-style:normal;text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:10px;text-underline-offset:2px}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:620px;margin-bottom:28px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 21px;border-radius:10px;font-weight:800;border:1px solid transparent;transition:.2s}
+.btn-primary{background:var(--yellow);color:#161616;box-shadow:0 8px 22px rgba(245,196,0,.22)}
+.btn-primary:hover{background:var(--yellow2);transform:translateY(-2px)}
+.btn-outline{border-color:#d7dbe0;background:#fff}
+.btn-outline:hover{border-color:#b7a000}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 22px 60px rgba(25,35,50,.09)}
+.electric{height:250px;border-radius:18px;background:linear-gradient(145deg,#fff9d9,#fff);display:grid;place-items:center;border:1px solid #f2e7a5;margin-bottom:22px}
+.bolt{font-size:8rem;filter:drop-shadow(0 10px 10px rgba(245,196,0,.25))}
+.hero-card h3{font-size:1.3rem;margin-bottom:8px}.hero-card p{font-size:.96rem;margin:0}
+section{padding:80px 0}
+.section-head{max-width:680px;margin-bottom:40px}
+.kicker{color:#9a7900;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;margin-bottom:9px}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin-bottom:12px}
+.section-head p{color:var(--muted)}
+.services{background:var(--light)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(25,35,50,.08)}
+.icon{width:48px;height:48px;border-radius:12px;background:#fff3b8;display:grid;place-items:center;font-size:1.35rem;margin-bottom:18px}
+.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:.95rem}
+.why{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.points{display:grid;gap:20px}.point{display:flex;gap:15px}.check{flex:0 0 34px;height:34px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-weight:900}.point p{color:var(--muted);font-size:.95rem}
+.cta{padding:55px 0}.cta-box{background:var(--ink);color:#fff;border-radius:24px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta-box p{color:#c8ced7;margin-top:7px}.cta .btn{white-space:nowrap}
+.contact{background:var(--light)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}
+.contact-item{display:flex;gap:15px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border:0}
+.contact-item strong{display:block}.contact-item span{color:var(--muted);font-size:.92rem}
+form{display:grid;gap:12px}input,textarea{width:100%;padding:14px;border:1px solid #dfe3e8;border-radius:9px;font:inherit}textarea{min-height:120px;resize:vertical}button{cursor:pointer;border:0;font:inherit}
+footer{padding:28px 0;text-align:center;color:#7a8390;font-size:.9rem;border-top:1px solid var(--line)}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#20c76a;color:#fff;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 8px 25px rgba(0,0,0,.2);z-index:30}
+@media(max-width:800px){nav{display:none}.hero-grid,.why,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.hero{padding:65px 0}.hero-card{max-width:520px}section{padding:60px 0}.cta-box{padding:35px;flex-direction:column;align-items:flex-start}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.actions .btn{width:100%}h1{letter-spacing:-1px}.hero-card{padding:20px}.electric{height:190px}.bolt{font-size:6rem}.cta-box{border-radius:18px}.whatsapp{right:15px;bottom:15px}}
+
+.hero-grid{display:block;max-width:850px}
+.hero{padding:70px 0 65px}
+.hero p{max-width:700px}
+.hero-card{display:none}
+@media(max-width:800px){.hero-grid{display:block}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#inicio"><span>⚡</span> Farias Soluções Elétricas</a>
+<nav><a href="#servicos">Serviços</a><a href="#sobre">Por que contratar</a><a href="#contato">Contato</a></nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="container">
+<div>
+<div class="badge">⚡ Farias Soluções Elétricas</div>
+<h1>Eletricista <em>Predial e Residencial</em></h1>
+<p>Soluções elétricas com segurança, organização e profissionalismo para sua casa ou seu negócio.</p>
+<div class="actions">
+<a class="btn btn-primary" href="https://wa.me/5596991224286?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">💬 Pedir orçamento no WhatsApp</a>
+<a class="btn btn-outline" href="#servicos">Conhecer serviços</a>
+</div>
+</div>
+
+</section>
+
+<section id="sobre">
+<div class="container why">
+<div class="section-head"><div class="kicker">Farias Soluções Elétricas</div><h2>Profissionalismo em cada serviço.</h2><p>Uma instalação elétrica bem executada traz mais segurança, praticidade e tranquilidade para o dia a dia.</p></div>
+<div class="points">
+<div class="point"><div class="check">✓</div><div><strong>Segurança em primeiro lugar</strong><p>Serviços realizados com atenção aos cuidados necessários em instalações elétricas.</p></div></div>
+<div class="point"><div class="check">✓</div><div><strong>Atendimento transparente</strong><p>Conversa clara sobre a necessidade do serviço e o que precisa ser realizado.</p></div></div>
+<div class="point"><div class="check">✓</div><div><strong>Compromisso com a qualidade</strong><p>Organização e cuidado em cada etapa do trabalho.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container"><div class="cta-box"><div><h2>Precisa de um eletricista?</h2><p>Fale com a Farias Soluções Elétricas e solicite seu orçamento.</p></div><a class="btn btn-primary" href="https://wa.me/5596991224286?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">💬 Falar no WhatsApp</a></div></div>
+</section>
+
+<section class="contact" id="contato">
+<div class="container">
+<div class="section-head"><div class="kicker">Contato</div><h2>Vamos conversar sobre seu serviço</h2><p>Envie uma mensagem e explique brevemente o que você precisa.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-item"><div class="icon">📱</div><div><strong>WhatsApp</strong><span>(96) 99122-4286</span></div></div>
+<div class="contact-item"><div class="icon">🕐</div><div><strong>Horário de atendimento</strong><span>08:00 às 12:00 e 14:00 às 17:00</span></div></div>
+</div>
+<div class="contact-card">
+<form onsubmit="enviarWhatsApp(event)">
+<input id="nome" required placeholder="Seu nome">
+<input id="assunto" required placeholder="Qual serviço você precisa?">
+<textarea id="mensagem" required placeholder="Conte brevemente o que você precisa..."></textarea>
+<button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Farias Soluções Elétricas — Eletricista Predial e Residencial</div></footer>
+<a class="whatsapp" href="https://wa.me/5596991224286" target="_blank" aria-label="WhatsApp">💬</a>
+
+<script>
+function enviarWhatsApp(e){
+ e.preventDefault();
+ const nome=document.getElementById('nome').value;
+ const assunto=document.getElementById('assunto').value;
+ const mensagem=document.getElementById('mensagem').value;
+ const texto=`Olá! Meu nome é ${nome}. Preciso de um serviço de ${assunto}. ${mensagem}`;
+ window.open('https://wa.me/5596991224286?text='+encodeURIComponent(texto),'_blank');
+}
+</script>
+</body>
+</html>
